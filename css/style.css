@@ -18,3 +18,17 @@ header li:hover:after{
 #shadow{
   box-shadow: inset 0px -120px  #ffffff;
 }
+article h3::before{
+  content: "";
+  display: inline-block;
+  width:12px;
+  height: 8px;
+  background: #cc1c1c;
+  margin-right: 8px;
+ 
+  
+  
+}
+article li span{
+  padding-left: 20px;
+}
