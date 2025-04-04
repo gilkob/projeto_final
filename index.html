@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="max-w-screen overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=  , initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>vansstore - shoe store</title>
   </head>
-  <body>
+  <body class="max-w-screen overflow-x-hidden">
     <header class="bg-black pb-12">
       <div
         class="justify-items-center items-center p-4 sm:flex sm:justify-between"
@@ -22,19 +22,19 @@
             class="flex text-gray-900 gap-2 font-semibold sm:text-[1.2rem] sm:gap-4 lg:text-[1.5rem] lg:gap-8 lg:text-white"
           >
             <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
-              <a href="">vestuario</a>
+              <a href="sapatos.html">vestuario</a>
             </li>
             <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
               <a href="">garantia</a>
             </li>
             <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
-              <a href="">seguros</a>
+              <a href="">contato</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="bg-black" id="shadow">
+    <main class="bg-black shadow">
       <div
         class="text-white text-center sm:grid sm:grid-cols-2 gap-4 max-w-[1300px] box-border pl-[20px] pr-[20px] mr-auto ml-auto"
       >
@@ -46,7 +46,9 @@
           />
         </div>
 
-        <div class="text-left content-center self-center sm:row-1 pb-[200px]">
+        <div
+          class="text-left content-center self-center sm:row-1 sm:pb-[200px]"
+        >
           <h1
             class="font-semibold text-[1.5rem] sm:text-[2rem] lg:text-[64px] leading-[112%] mb-[32px] height-[2.5rem]"
           >
@@ -115,27 +117,58 @@
         </li>
       </ul>
     </article>
-    <footer class="bg-black text-white text-center p-4 mt-4">
-      <img
-        src="
-      "
-        alt=""
-      />
-      <div>
-        <span>sapatos mais modernos</span>
-        <h3>você escolhe a cor e o tamanho do seu tênis<span class="text-amber-300">.</span></h3>
-        <p>cada tênisda Vans Store foi projetado para proporcionar o maior comforto para os nossos clientes</p>
-        <a href="">escolha um modelo</a>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <h3>boost flow</h3>
-            <p>mais recente tecnologia de palmilhas que amortece até os impactos mais intensos</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3>cadarço flow</h3>
-            <p>cadarço que nunca desamarra</p>
+    <footer class="bg-black shadow1 sm:mt-[80px]">
+      <div
+        class="text-white text-center p-4 mt-4 sm:grid sm:grid-cols-2 gap-4 lg:max-w-[1300px] box-border pl-[20px] pr-[20px] lg:box-border lg:pl-[20px] lg:pr-[20px] lg:mr-auto lg:ml-auto"
+      >
+        <img
+          src="/img/bef68bd2-6f95-423f-a2b7-e462b575627d.png"
+          alt=""
+          class="max-w-full sm:col-2 lg:ml-auto lg:mr-auto lg:mt-0"
+        />
+        <div class="sm:row-1 sm:mt-[120px] sm:mb-[120px]">
+          <span class="font-semibold text-gray-300">sapatos mais modernos</span>
+          <h3
+            class="lg:text-[64px] font-bold leading-[112%] sm:mb-[10px] lg:mb-[32px] height-[2.5rem]"
+          >
+            você escolhe a cor e o tamanho do seu tênis<span
+              class="text-amber-300"
+              >.</span
+            >
+          </h3>
+          <p class="lg:text-[1.5rem] mb-4">
+            cada tênisda Vans Store foi projetado para proporcionar o maior
+            comforto para os nossos clientes
+          </p>
+          <a
+            href=""
+            class="underline text-amber-300 font-semibold lg:text-[1.5rem] lg:font-bold lg:hover:text-amber-50 lg:transition-all lg:duration-300 lg:ease-in-out"
+            >escolha um modelo</a
+          >
+          <div class="flex sm:gap-2 mt-1 sm:mt-8">
+            <div class="max-w-[300px] text-left">
+              <img
+                src="running-2-svgrepo-com.svg"
+                alt=""
+                class="max-w-[40px]"
+              />
+              <h3 class="font-semibold">boost flow</h3>
+              <p class="text-gray-300 sm:text-[0.9rem]">
+                mais recente tecnologia de palmilhas que amortece até os
+                impactos mais intensos
+              </p>
+            </div>
+            <div class="max-w-[300px] max-h-[300px] text-left">
+              <img
+                src="align-vertical-center-svgrepo-com.svg"
+                alt=""
+                class="max-w-[40px] text-amber-300"
+              />
+              <h3 class="font-semibold">cadarço flow</h3>
+              <p class="text-gray-300 sm:text-[0.9rem]">
+                usa materiais de alta tecnologia e design inteligente para um ajuste firme e seguro, eliminando o problema de desamarrar.
+              </p>
+            </div>
           </div>
         </div>
       </div>
