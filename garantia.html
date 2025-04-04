@@ -3,99 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/garantia.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h2>Vans Store</h2>
-      <ul>
-        <li><a href="">vestuario</a></li>
-        <li><a href="">planos</a></li>
-        <li><a href="">contato</a></li>
+    <header
+      class="bg-black pb-4 justify-items-center text-white sm:flex sm:justify-between items-center p-4"
+    >
+      <h2 class="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[4rem]">
+        Vans Store
+      </h2>
+      <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
+        <li><a href="" class="header">vestuario</a></li>
+        <li><a href="" class="underline">planos</a></li>
+        <li><a href="" class="header">contato</a></li>
       </ul>
     </header>
-    <main>
-      <div>
-        <p>escolha o plano</p>
-        <h2>Você Com Seu Calçado Preferido<span>.</span></h2>
-      </div>
-      <div>
-        <div>
-          <h3>prata</h3>
-          <span>R$199</span>
+    <main class="bg-gray-700 pb-[120px]">
+      <div class="ml-auto mr-auto max-w-[1300px] p-4">
+        <div class="pb-4">
+          <p class="text-gray-300">escolha o plano</p>
+          <h2 class="text-white font-semibold text-[2rem] lg:text-[64px] lg:pb-[60px]">
+            Você Com Seu Calçado Preferido<span class="text-amber-300">.</span>
+          </h2>
         </div>
-        <ul>
-          <li>pode escolher até 3 sapatos por mês</li>
-          <li>garantia de 1 ano para os calçados escolhidos</li>
-          <li>suporte das 8h às 18h</li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <h3>ouro</h3>
-          <span>R$499</span>
+        <div class="flex gap-4 justify-center items-center flex-wrap ">
+          <div class="text-white bg-black p-4 rounded-[0.5rem] max-w-[344px]   sm:max-w-[400px] lg:max-w-[600px]">
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]">prata</h3>
+              <span class="sm:text-[1.3rem]">R$199</span>
+            </div>
+            <ul class="list-disc ml-4 sm:text-[1.1rem] lg:text-[1.3rem]">
+              <li>pode escolher até 3 sapatos por mês</li>
+              <li>garantia de 1 ano para os calçados escolhidos</li>
+              <li>suporte das 8h às 18h</li>
+            </ul>
+          </div>
+          <div class="text-white bg-black p-6 rounded-[0.5rem] max-w-[344px] sm:max-w-[400px] lg:max-w-[600px]">
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]">ouro</h3>
+              <span class="text-yellow-300 sm:text-[1.3rem]">R$499</span>
+            </div>
+            <ul class="list-disc ml-4 sm:text-[1.1rem] lg:text-[1.3rem]">
+              <li>
+                pode escolher até 5 sapatos por mês(com limite de 20 sapatos por
+                ano)
+              </li>
+              <li>garantia de 2 anos para os calçados escolhidos</li>
+              <li>suporte 24h</li>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>
-            pode escolher até 5 sapatos por mês(com limite de 20 sapatos por
-            ano)
-          </li>
-          <li>garantia de 2 anos para os calçados escolhidos</li>
-          <li>suporte 24h</li>
-        </ul>
       </div>
     </main>
-    <article aria-labelledby="vantagens">
-      <div>
-        <h2></h2>
+    <article aria-labelledby="vantagens" class="bg-black p-4">
+      <div class="text-white sm:pb-[80px] ">
+        <h2 class="text-[2rem] font-semibold sm:text-[64px] sm:pb-[80px]">
+          Nossas vantagens<span class="text-amber-300">.</span>
+        </h2>
         <div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+          <div
+            class="flex gap-8 justify-center items-center flex-wrap mr-auto ml-auto max-w-[1300px] p-2 sm:pb-[40px]"
+          >
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">sustentabilidade</h3>
+              <p>
+                tênis feitos com materiais suntentaveis e Nossas fabricas
+                utilizam metodos de produção que minimizam a liberação de gas
+                carbonicos
+              </p>
+            </div>
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">qualidade</h3>
+              <p>
+                Nossa fabrica possui uma elaborado controle de qaulidade que não
+                tolera nenhum defeito nos nossos items
+              </p>
+            </div>
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">nostalgia</h3>
+              <p>
+                use os mesmos tênis que seus pais usaram, nossa marca tem linhas
+                de tenis com mais de 80 anos.
+              </p>
+            </div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+          <div class="flex gap-8  justify-center items-center flex-wrap p-2">
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">tecnologia</h3>
+              <p>
+                Nossos tênis estão sempre inovando com as tecnologias mais
+                recentes do mercado
+              </p>
+            </div>
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">multiuso</h3>
+              <p>
+                Os Nossos tênis podem ser usados tanto por um corredor quanto
+                por um velhinho ou um corredor velhinho
+              </p>
+            </div>
+            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
+              <img src="" alt="" />
+              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">design</h3>
+              <p>
+                melhoes designs para tirar onda na rua ou em qualquer lugar que
+                você vá
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </article>
     <article aria-labelledby="perguntas">
-      <h2 id="perguntas">Perguntas Frequentes</h2>
-      <div>
-        <h3>Qual é a política de garantia?</h3>
-        <p>
-          A Vans Store oferece garantia de 1 ano para defeitos de fabricação.
-        </p>
-      </div>
-      <div>
-        <h3>Como faço para solicitar a garantia?</h3>
-        <p>
-          Entre em contato com nosso suporte pelo e-mail suporte@vansstore.com
-        </p>
+      <div class="p-4">
+        <h2 id="perguntas" class="text-[2rem]">
+          Perguntas Frequentes<span class="text-amber-400">.</span>
+        </h2>
+        <div>
+          <h3>Qual é a política de garantia?</h3>
+          <p>
+            A Vans Store oferece garantia de 1 ano para defeitos de fabricação.
+          </p>
+        </div>
+        <div>
+          <h3>Como faço para solicitar a garantia?</h3>
+          <p>
+            Entre em contato com nosso suporte pelo e-mail suporte@vansstore.com
+          </p>
+        </div>
       </div>
     </article>
+    <footer id="contato" class="bg-black p-4 text-white">
+      <div
+        class="sm:flex sm:flex-wrap sm:justify-between items-center max-w-[1300px] ml-auto mr-auto gap-8"
+      >
+        <div>
+          <h2 class="text-[1.6rem] font-bold ">Vans Store</h2>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="text-[1.3rem]">contato</h3>
+          </div>
+          <div class="flex flex-col">
+            <span>+55 (91)988787-5744</span>
+            <span>jdoasdifs@gmail.com</span>
+          </div>
+          <div class="flex flex-col">
+            <span>rua jacintopinto 45</span>
+            <span> Rio de Janeiro-RJ</span>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h2>informações</h2>
+          <span>tenis</span>
+          <span>contato</span>
+          <span>termos e condições</span>
+          <span>planos</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

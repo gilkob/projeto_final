@@ -1,0 +1,14 @@
+@import "tailwindcss";
+.header::after{
+  content: "";
+  display: block;
+  width:0px;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+  margin-top: 4px;
+
+}
+.header:hover:after{
+  width: 100%;
+}
