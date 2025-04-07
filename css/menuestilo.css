@@ -26,7 +26,7 @@
 .shadow1{
   box-shadow: inset 0px 0px  #ffffff ,inset 0px 0px  #000000;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
   .shadow{
     box-shadow: inset 450px 0px 0px 0px  #ffffff;
   }
