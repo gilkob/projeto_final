@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/garantia.css" />
+    <link rel="stylesheet" href="./css/menuestilo.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
@@ -17,7 +17,7 @@
       <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
         <li><a href="" class="header">vestuario</a></li>
         <li><a href="" class="underline">planos</a></li>
-        <li><a href="" class="header">contato</a></li>
+        <li><a href="#contato" class="header">contato</a></li>
       </ul>
     </header>
     <main class="bg-gray-700 pb-[120px]">
@@ -142,12 +142,12 @@
     </article>
     <footer id="contato" class="bg-black p-4 text-white">
       <div
-        class="sm:flex sm:flex-wrap sm:justify-between items-center max-w-[1300px] ml-auto mr-auto gap-8"
+        class="sm:flex sm:flex-wrap sm:justify-between items-start max-w-[1300px] ml-auto mr-auto gap-8"
       >
-        <div>
-          <h2 class="text-[1.6rem] font-bold ">Vans Store</h2>
+        <div class="text-left">
+          <h2 class="text-[2rem] font-bold">Vans Store</h2>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
           <div>
             <h3 class="text-[1.3rem]">contato</h3>
           </div>
@@ -157,20 +157,20 @@
           </div>
           <div class="flex flex-col">
             <span>rua jacintopinto 45</span>
-            <span> Rio de Janeiro-RJ</span>
+            <span>Rio de Janeiro-RJ</span>
           </div>
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div class="flex gap-2 mt-4 icone">
+            <img src="redes/instagram.svg" alt="" class="max-w-[32px]" />
+            <img src="redes/facebook.svg" alt="" class="max-w-[32px]" />
+            <img src="redes/youtube.svg" alt="" class="max-w-[32px]" />
           </div>
         </div>
-        <div class="flex flex-col gap-4">
-          <h2>informações</h2>
-          <span>tenis</span>
-          <span>contato</span>
-          <span>termos e condições</span>
-          <span>planos</span>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-[1.3rem]">informações</h2>
+          <a href="">tenis</a>
+          <a href="#contato">contato</a>
+          <a href="termos.html" >termos e condições</a>
+          <a href="garantia.html">planos</a>
         </div>
       </div>
     </footer>

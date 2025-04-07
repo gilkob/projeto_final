@@ -1,4 +1,7 @@
 @import "tailwindcss";
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .header::after{
   content: "";
   display: block;
@@ -11,4 +14,9 @@
 }
 .header:hover:after{
   width: 100%;
+}
+.icone{
+ 
+  fill: #ff0000; /* Altera a cor de preenchimento para vermelho */
+  stroke: #000000; /* Altera a cor da borda para preto (se aplicável) */
 }
