@@ -20,3 +20,17 @@
   fill: #ff0000; /* Altera a cor de preenchimento para vermelho */
   stroke: #000000; /* Altera a cor da borda para preto (se aplicável) */
 }
+.shadow{
+  box-shadow: inset 0px 0px  #ffffff;
+}
+.shadow1{
+  box-shadow: inset 0px 0px  #ffffff ,inset 0px 0px  #000000;
+}
+@media screen and (min-width: 768px){
+  .shadow{
+    box-shadow: inset 450px 0px 0px 0px  #ffffff;
+  }
+  .shadow1{
+    box-shadow: inset 0px 120px  #ffffff ,inset 0px -140px  #ffffff;
+  }
+}
