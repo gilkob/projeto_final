@@ -1,54 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/menuestilo.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Planos e Garantia - Vans Store</title>
+    <style type="text/tailwindcss">
+      .arrow {
+        @apply inline-block w-4 h-4 bg-contain bg-no-repeat bg-center transition-transform duration-300 shrink-0 ml-2;
+      }
+      .rotate-180 {
+        @apply rotate-180;
+      }
+      .ativo {
+        @apply text-amber-400 font-bold underline;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header
       class="bg-black pb-4 justify-items-center text-white sm:flex sm:justify-between items-center p-4"
     >
-      <h2 class="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[4rem]"><a href="./index.html">Vans Store</a>
-        
-      </h2>
-      <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
-        <li><a href="sapatos.html" class="header">sapatos</a></li>
-        <li><a href="" class="underline">planos</a></li>
-        <li><a href="#contato" class="header">contato</a></li>
-      </ul>
+      <h1 class="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[4rem]">
+        <a href="./index.html">Vans Store</a>
+      </h1>
+      <nav aria-label="Navegação principal" id="nav-principal">
+        <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
+          <li>
+            <a href="sapatos.html" class="">sapatos</a>
+          </li>
+          <li>
+            <a href="garantia.html" class="">planos</a>
+          </li>
+          <li><a href="#contato" class="">contato</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main class="bg-gray-700 pb-[120px]">
       <div class="ml-auto mr-auto max-w-[1300px] p-4">
         <div class="pb-4">
           <p class="text-gray-300 sm:text-[32px]">escolha o plano</p>
-          <h2 class="text-white font-semibold text-[2rem] lg:text-[64px] lg:pb-[60px]">
+          <h2
+            class="text-white font-semibold text-[2rem] lg:text-[64px] lg:pb-[60px]"
+          >
             Você Com Seu Calçado Preferido<span class="text-amber-300">.</span>
           </h2>
         </div>
-        <div class="flex gap-4 justify-center items-center flex-wrap ">
-          <div class="text-white bg-black p-4 rounded-[0.5rem] max-w-[344px]   sm:max-w-[400px] lg:max-w-[600px]">
-            <div class="flex justify-between items-center">
-              <h3 class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]">prata</h3>
-              <span class="sm:text-[1.3rem]">R$199</span>
+        <div class="flex gap-4 justify-center items-stretch flex-wrap">
+          <div
+            class="text-white bg-black p-6 rounded-[0.5rem] flex flex-col max-w-[344px] sm:max-w-[400px] lg:max-w-[600px]"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3
+                class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]"
+              >
+                prata
+              </h3>
+              <span class="sm:text-[1.3rem] whitespace-nowrap">R$ 199</span>
             </div>
-            <ul class="list-disc ml-4 sm:text-[1.1rem] lg:text-[1.3rem]">
+            <ul
+              class="list-disc ml-4 space-y-2 sm:text-[1.1rem] lg:text-[1.3rem] flex-grow"
+            >
               <li>pode escolher até 3 sapatos por mês</li>
               <li>garantia de 1 ano para os calçados escolhidos</li>
               <li>suporte das 8h às 18h</li>
             </ul>
           </div>
-          <div class="text-white bg-black p-6 rounded-[0.5rem] max-w-[344px] sm:max-w-[400px] lg:max-w-[600px]">
-            <div class="flex justify-between items-center">
-              <h3 class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]">ouro</h3>
-              <span class="text-yellow-300 sm:text-[1.3rem]">R$499</span>
+          <div
+            class="text-white bg-black p-6 rounded-[0.5rem] flex flex-col max-w-[344px] sm:max-w-[400px] lg:max-w-[600px]"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3
+                class="font-semibold text-[1.1rem] sm:text-[2rem] lg:text-[3rem]"
+              >
+                ouro
+              </h3>
+              <span class="text-yellow-300 sm:text-[1.3rem] whitespace-nowrap"
+                >R$ 499</span
+              >
             </div>
-            <ul class="list-disc ml-4 sm:text-[1.1rem] lg:text-[1.3rem]">
+            <ul
+              class="list-disc ml-4 space-y-2 sm:text-[1.1rem] lg:text-[1.3rem] flex-grow"
+            >
               <li>
-                pode escolher até 5 sapatos por mês(com limite de 20 sapatos por
-                ano)
+                pode escolher até 5 sapatos por mês (com limite de 20 sapatos
+                por ano)
               </li>
               <li>garantia de 2 anos para os calçados escolhidos</li>
               <li>suporte 24h</li>
@@ -57,122 +98,237 @@
         </div>
       </div>
     </main>
-    <article aria-labelledby="vantagens" class="bg-black p-4">
-      <div class="text-white sm:pb-[80px] ">
-        <h2 class="text-[2rem] font-semibold sm:text-[64px] sm:pb-[80px]">
+
+    <article
+      aria-labelledby="vantagens-titulo"
+      class="bg-black p-4 py-12 sm:py-16"
+    >
+      <div class="text-white max-w-[1300px] mx-auto">
+        <h2
+          id="vantagens-titulo"
+          class="text-[2rem] font-semibold sm:text-[64px] mb-12 sm:mb-16 text-center sm:text-left"
+        >
           Nossas vantagens<span class="text-amber-300">.</span>
         </h2>
-        <div>
-          <div
-            class="flex gap-8 justify-center items-center flex-wrap mr-auto ml-auto max-w-[1300px] p-2 sm:pb-[40px]"
-          >
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">sustentabilidade</h3>
-              <p>
-                tênis feitos com materiais suntentaveis e Nossas fabricas
-                utilizam metodos de produção que minimizam a liberação de gas
-                carbonicos
-              </p>
-            </div>
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">qualidade</h3>
-              <p>
-                Nossa fabrica possui uma elaborado controle de qaulidade que não
-                tolera nenhum defeito nos nossos items
-              </p>
-            </div>
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">nostalgia</h3>
-              <p>
-                use os mesmos tênis que seus pais usaram, nossa marca tem linhas
-                de tenis com mais de 80 anos.
-              </p>
-            </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+        >
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Sustentabilidade
+            </h3>
+            <p class="text-gray-300">
+              Tênis feitos com materiais sustentáveis e nossas fábricas utilizam
+              métodos de produção que minimizam a liberação de gás carbônico.
+            </p>
           </div>
-          <div class="flex gap-8  justify-center items-center flex-wrap p-2">
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">tecnologia</h3>
-              <p>
-                Nossos tênis estão sempre inovando com as tecnologias mais
-                recentes do mercado
-              </p>
-            </div>
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">multiuso</h3>
-              <p>
-                Os Nossos tênis podem ser usados tanto por um corredor quanto
-                por um velhinho ou um corredor velhinho
-              </p>
-            </div>
-            <div class="sm:max-w-[250px] lg:max-w-[300px] max-h-[152px] border-l-4 pl-4">
-              <img src="" alt="" />
-              <h3 class="text-[1.1rem] sm:text-[2rem]  font-semibold">design</h3>
-              <p>
-                melhoes designs para tirar onda na rua ou em qualquer lugar que
-                você vá
-              </p>
-            </div>
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Qualidade
+            </h3>
+            <p class="text-gray-300">
+              Nossa fábrica possui um elaborado controle de qualidade que não
+              tolera nenhum defeito nos nossos itens.
+            </p>
+          </div>
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Nostalgia
+            </h3>
+            <p class="text-gray-300">
+              Use os mesmos tênis que seus pais usaram, nossa marca tem linhas
+              de tênis com mais de 80 anos.
+            </p>
+          </div>
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Tecnologia
+            </h3>
+            <p class="text-gray-300">
+              Nossos tênis estão sempre inovando com as tecnologias mais
+              recentes do mercado.
+            </p>
+          </div>
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Multiuso
+            </h3>
+            <p class="text-gray-300">
+              Os nossos tênis podem ser usados tanto por um corredor quanto por
+              um velhinho ou um corredor velhinho.
+            </p>
+          </div>
+          <div class="border-l-4 border-amber-300 pl-4">
+            <h3
+              class="text-[1.1rem] sm:text-[1.5rem] lg:text-[2rem] font-semibold mb-2"
+            >
+              Design
+            </h3>
+            <p class="text-gray-300">
+              Melhores designs para tirar onda na rua ou em qualquer lugar que
+              você vá.
+            </p>
           </div>
         </div>
       </div>
     </article>
-    <article aria-labelledby="perguntas">
-      <div class="p-12">
-        <h2 id="perguntas" class="text-[2rem] sm:text-[64px] sm:pb-[40px] font-semibold">
+
+    <section aria-labelledby="perguntas-titulo" class="py-12 sm:py-16">
+      <div class="p-4 sm:p-12 max-w-3xl mx-auto">
+        <h2
+          id="perguntas-titulo"
+          class="text-[2rem] sm:text-[64px] font-semibold mb-8 sm:mb-12"
+        >
           Perguntas Frequentes<span class="text-amber-400">.</span>
         </h2>
-        <div class="flex flex-col ">
-          <h3 class=" text-[1.2rem] sm:text-[1.5rem] lg:text-[2rem]">Qual é a política de garantia?</h3>
-          <p class="text-gray-800 sm:text-[1.1rem] lg:text-[1.3rem]">
+
+        <div class="faq-item border-b border-gray-300 py-4">
+          <button
+            type="button"
+            id="pergunta-btn-1"
+            class="faq-question w-full flex justify-between items-center text-left text-[1.2rem] sm:text-[1.5rem] lg:text-[1.8rem] font-medium text-gray-900 hover:text-amber-500"
+            aria-controls="resposta-1"
+            aria-expanded="false"
+          >
+            <span>Qual é a política de garantia?</span>
+            <span
+              class="arrow"
+              aria-hidden="true"
+              style="
+                background-image: url('../img/angle-arrow-down_icon-icons.com_73683.svg');
+              "
+            ></span>
+          </button>
+          <div
+            id="resposta-1"
+            class="faq-answer hidden mt-3 text-gray-700 sm:text-[1.1rem] lg:text-[1.2rem] pl-2"
+            role="region"
+            aria-labelledby="pergunta-btn-1"
+          >
             A Vans Store oferece garantia de 1 ano para defeitos de fabricação.
-          </p>
+          </div>
         </div>
-        <div>
-          <h3 class=" text-[1.2rem] sm:text-[1.5rem] lg:text-[2rem] ">Como faço para solicitar a garantia?</h3>
-          <p class="text-gray-800 sm:text-[1.1rem] lg:text-[1.3rem]">
+
+        <div class="faq-item border-b border-gray-300 py-4">
+          <button
+            type="button"
+            id="pergunta-btn-2"
+            class="faq-question w-full flex justify-between items-center text-left text-[1.2rem] sm:text-[1.5rem] lg:text-[1.8rem] font-medium text-gray-900 hover:text-amber-500"
+            aria-controls="resposta-2"
+            aria-expanded="false"
+          >
+            <span>Como faço para solicitar a garantia?</span>
+            <span
+              class="arrow"
+              aria-hidden="true"
+              style="
+                background-image: url('../img/angle-arrow-down_icon-icons.com_73683.svg');
+              "
+            ></span>
+          </button>
+          <div
+            id="resposta-2"
+            class="faq-answer hidden mt-3 text-gray-700 sm:text-[1.1rem] lg:text-[1.2rem] pl-2"
+            role="region"
+            aria-labelledby="pergunta-btn-2"
+          >
             Entre em contato com nosso suporte pelo e-mail suporte@vansstore.com
-          </p>
+          </div>
+        </div>
+
+        <div class="faq-item border-b border-gray-300 py-4">
+          <button
+            type="button"
+            id="pergunta-btn-3"
+            class="faq-question w-full flex justify-between items-center text-left text-[1.2rem] sm:text-[1.5rem] lg:text-[1.8rem] font-medium text-gray-900 hover:text-amber-500 rounded"
+            aria-controls="resposta-3"
+            aria-expanded="false"
+          >
+            <span>Qual é o prazo de entrega?</span>
+            <span
+              class="arrow"
+              aria-hidden="true"
+              style="
+                background-image: url('../img/angle-arrow-down_icon-icons.com_73683.svg');
+              "
+            ></span>
+          </button>
+          <div
+            id="resposta-3"
+            class="faq-answer hidden mt-3 text-gray-700 sm:text-[1.1rem] lg:text-[1.2rem] pl-2"
+            role="region"
+            aria-labelledby="pergunta-btn-3"
+          >
+            O prazo de entrega varia de acordo com a localização, mas geralmente
+            é de 5 a 10 dias úteis.
+          </div>
         </div>
       </div>
-    </article>
-    <footer id="contato" class="bg-black p-4 text-white">
+    </section>
+
+    <footer id="contato" class="bg-black p-8 text-gray-300">
       <div
-        class="sm:flex sm:flex-wrap sm:justify-between items-start max-w-[1300px] ml-auto mr-auto gap-8"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1300px] ml-auto mr-auto"
       >
-        <div class="text-left">
-          <h2 class="text-[2rem] font-bold">Vans Store</h2>
+        <div>
+          <p class="text-[2rem] font-bold text-white mb-4">Vans Store</p>
+          <p class="text-sm">© 2025 Vans Store. Alguns direitos reservados.</p>
         </div>
-        <div class="flex flex-col gap-2">
-          <div>
-            <h3 class="text-[1.3rem]">contato</h3>
+        <div class="flex flex-col gap-4">
+          <h3 class="text-[1.3rem] text-white mb-2">Contato</h3>
+          <div class="flex flex-col gap-1">
+            <a href="tel:+55919887875744" class="hover:text-white"
+              >+55 (91) 988787-5744</a
+            >
+            <a href="mailto:jdoasdifs@gmail.com" class="hover:text-white"
+              >jdoasdifs@gmail.com</a
+            >
           </div>
-          <div class="flex flex-col">
-            <span>+55 (91)988787-5744</span>
-            <span>jdoasdifs@gmail.com</span>
-          </div>
-          <div class="flex flex-col">
-            <span>rua jacintopinto 45</span>
-            <span>Rio de Janeiro-RJ</span>
-          </div>
-          <div class="flex gap-2 mt-4 icone">
-            <img src="redes/instagram.svg" alt="" class="max-w-[32px]" />
-            <img src="redes/facebook.svg" alt="" class="max-w-[32px]" />
-            <img src="redes/youtube.svg" alt="" class="max-w-[32px]" />
+          <address class="flex flex-col gap-1 not-italic">
+            <span>Rua Jacinto Pinto, 45</span>
+            <span>Rio de Janeiro - RJ</span>
+          </address>
+          <div class="flex gap-4 mt-4">
+            <a href="#" aria-label="Visite nosso Instagram"
+              ><img
+                src="redes/instagram.svg"
+                alt=""
+                class="w-8 h-8 hover:opacity-80"
+            /></a>
+            <a href="#" aria-label="Visite nosso Facebook"
+              ><img
+                src="redes/facebook.svg"
+                alt=""
+                class="w-8 h-8 hover:opacity-80"
+            /></a>
+            <a href="#" aria-label="Visite nosso Youtube"
+              ><img
+                src="redes/youtube.svg"
+                alt=""
+                class="w-8 h-8 hover:opacity-80"
+            /></a>
           </div>
         </div>
-        <div class="flex flex-col gap-1">
-          <h2 class="text-[1.3rem]">informações</h2>
-          <a href="sapatos.html">tenis</a>
-          <a href="#contato">contato</a>
-          <a href="termos.html" >termos e condições</a>
-          <a href="garantia.html" class="underline">planos</a>
-        </div>
+        <nav aria-label="Navegação do rodapé" class="flex flex-col gap-2">
+          <h3 class="text-[1.3rem] text-white mb-2">Informações</h3>
+          <a href="sapatos.html" class="hover:text-white">Tênis</a>
+          <a href="garantia.html" class="hover:text-white">Planos</a>
+          <a href="#contato" class="hover:text-white">Contato</a>
+          <a href="termos.html" class="hover:text-white">Termos e Condições</a>
+        </nav>
       </div>
     </footer>
+
+    <script src="bicicletas.js"></script>
   </body>
 </html>

@@ -26,11 +26,57 @@
 .shadow1{
   box-shadow: inset 0px 0px  #ffffff ,inset 0px 0px  #000000;
 }
+.shadow2{
+  box-shadow: inset 0px 0px  #ffffff ,inset 0px 0px  #000000;
+}
+.shadow3{
+  box-shadow: inset 0px 0px  #000000 ,inset 0px 0px  #000000;
+}
 @media screen and (min-width: 1024px){
   .shadow{
-    box-shadow: inset 450px 0px 0px 0px  #ffffff;
+    box-shadow: inset 0px  -120px 0px  #ffffff;
   }
   .shadow1{
     box-shadow: inset 0px 120px  #ffffff ,inset 0px -140px  #ffffff;
   }
+  .shadow2{
+    box-shadow: inset 0px 120px  #ffffff ,inset 0px -140px  #000000;
+  }
+  .shadow3{
+    box-shadow: inset 450px 0px  #ffffff ;
+  }
+}
+
+.active::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+  margin-top: 4px;
+}
+
+.perguntas dt::before{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #d7c600;
+  
+}
+.perguntas dt .arrow {
+  display: inline-block; /* Para poder definir width/height */
+  width: 16px;          /* Tamanho mais razoável */
+  height: 16px;         /* Tamanho mais razoável */
+  background-image: url("../img/angle-arrow-down_icon-icons.com_73683.svg"); /* Ajuste o caminho se necessário */
+  background-size: contain; /* Garante que o ícone caiba */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: center; /* Centraliza */
+  transition: transform 0.3s; /* Mantém a transição de rotação do JS */
+}
+
+/* Estilo para quando estiver rotacionado (se a classe for adicionada via JS) */
+.arrow.rotate-180 {
+  transform: rotate(180deg);
 }

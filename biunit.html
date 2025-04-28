@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/menuestilo.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <header
+      class="bg-black pb-4 justify-items-center text-white sm:flex sm:justify-between items-center p-4"
+    >
+      <h2 class="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[4rem]">
+        <a href="./index.html">Vans Store</a>
+      </h2>
+      <nav>
+        <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
+          <li><a href="sapatos.html" class="">sapatos</a></li>
+          <li><a href="garantia.html" class="">planos</a></li>
+          <li><a href="#contato" class="">contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="bg-gray-800">
+        <div>
+          <div>
+            <span id="precosa"></span>
+            <h2 id="nomesa"></h2>
+          </div>
+          <div
+            class="flex flex-col lg:grid lg:grid-cols-2 lg:items-start lg:p-8 p-4 gap-2"
+          >
+            <div
+              id="galeria"
+              class="grid grid-cols-2 lg:grid-rows-2 lg:p-8 max-h-fit lg:max-w-[600px] lg:mr-[30px] lg:ml-auto m-auto gap-4"
+            >
+              <img
+                id="imagem-principal"
+                src="img/Captura de tela 2025-04-03 144549.png"
+                alt="Vista superior do tênis Vans Crosspath Green"
+                class="col-span-2 rounded-[6px] w-full h-auto"
+              />
+              <div class="grid grid-cols-2 gap-4 col-span-2">
+                <img
+                  id="miniatura-1"
+                  src="img/Captura de tela 2025-04-03 145339.png"
+                  alt="Vista lateral do tênis Vans Old Skool Pig Suede azul"
+                  class="rounded-[6px] w-full h-auto cursor-pointer hover:opacity-80 transition-opacity"
+                />
+                <img
+                  id="miniatura-2"
+                  src="img/Captura de tela 2025-04-03 144652.png"
+                  alt="Vista lateral do tênis Vans Old Skool preto"
+                  class="rounded-[6px] w-full h-auto cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </div>
+            </div>
+            <div class="lg:p-8 ml-auto mr-0 mt-0">
+              <div class="text-white grid gap-2">
+                <p class="text-[20px] lg:mt-0">
+                  Vans old skoll é uma dos tênis mais iconicos de todos os
+                  tempos. ele possui uma contrução extremamente reforçado para
+                  aguentar os desafios urbanos.
+                </p>
+                <div class="flex gap-4 p-2">
+                  <a
+                    href=""
+                    class="bg-amber-300 self-end p-2 text-black rounded-[4px]"
+                    >COMPRAR AGORA</a
+                  >
+                  <div class="">
+                    <div>
+                      <img src="" alt="" />
+                      <span>entrega em 5 dia</span>
+                    </div>
+                    <div>
+                      <img src="" alt="" />
+                      <span>18 em estoque</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pt-2 text-[22px]">informações</span>
+                <div
+                  class="grid grid-cols-2 gap-4 bg-black p-4 text-[1rem] break-words"
+                >
+                  <div>
+                    <img
+                      src="img/at-sign-28-svgrepo-com.svg"
+                      alt=""
+                      class="max-w-[18px]"
+                    />
+                    <h3>cadarço resistente</h3>
+                    <p>cadarço resistente no estilo old Skool</p>
+                  </div>
+                  <div>
+                    <img
+                      src="img/at-sign-28-svgrepo-com.svg"
+                      alt=""
+                      class="max-w-[18px]"
+                    />
+                    <h3>entressola resistente</h3>
+                    <p>entressola emborrachado super resistente</p>
+                  </div>
+                  <div>
+                    <img
+                      src="img/at-sign-28-svgrepo-com.svg"
+                      alt=""
+                      class="max-w-[18px]"
+                    />
+                    <h3>palmilha super confortavels</h3>
+                    <p>htghrtrbrttrjdvoiboiodfihboiborhtuhrthbhrthrt</p>
+                  </div>
+                  <div>
+                    <img
+                      src="img/at-sign-28-svgrepo-com.svg"
+                      alt=""
+                      class="max-w-[18px]"
+                    />
+                    <h3>parte superior de tecido r</h3>
+                    <p>tecido ultra resistente e respiravel</p>
+                  </div>
+                </div>
+                <span class="pt-4 text-[22px]">ficha tecnica</span>
+                <div class="flex flex-col bg-black p-4 text-[1rem] gap-2">
+                  <div class="justify-between flex gap-2">
+                    <span>peso</span>
+                    <span>230g</span>
+                  </div>
+                  <div class="justify-between flex gap-2">
+                    <span>entressola</span>
+                    <span> borracha</span>
+                  </div>
+                  <div class="justify-between flex gap-2">
+                    <span>material superior</span>
+                    <span>tecido</span>
+                  </div>
+                  <div class="justify-between flex gap-2">
+                    <span>garantia</span>
+                    <span>1 ano</span>
+                  </div>
+                  <div class="justify-between flex gap-2">
+                    <span>cadarço</span>
+                    <span>flow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <article id="article" class="p-4">
+      <h2 class="lg:text-[2.5rem] ml-[80px] lg:font-semibold">
+        escolha a sua peça<span class="text-amber-300">.</span>
+      </h2>
+      <ul
+        class="box-border pl-[20px] pr-[20px] mr-auto ml-auto flex gap-4 overflow-x-auto max-w-[1300px] p-4"
+      >
+        <li>
+          <a href="Crosspath.html">
+            <img
+              src="/img/Captura de tela 2025-04-03 144549.png"
+              alt=""
+              class="max-w-[300px] lg:max-w-[600px] max-h-[300px] lg:max-h-[600px]"
+            />
+            <h3 class="lg:font-medium lg:text-[1.5rem] after">
+              Vans Crosspath Green
+            </h3>
+            <span class="text-gray-800 text-[1.1rem]">R$1374,99</span>
+          </a>
+        </li>
+        <li>
+          <a href="pig.html">
+            <img
+              src="/img/Captura de tela 2025-04-03 145339.png"
+              alt=""
+              class="max-w-[300px] lg:max-w-[600px] max-h-[300px] lg:max-h-[600px]"
+            />
+            <h3 class="lg:font-medium lg:text-[1.5rem] after">
+              Vans Old Skool Pig
+            </h3>
+            <span class="text-gray-800 text-[1.1rem]">R$574,99</span>
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article class="">
+      <div class="bg-gray-700 shadow2 text-white p-4">
+        <div
+          class="lg:grid lg:grid-cols-2 lg:gap-4 lg:p-4 lg:max-w-[1000px] lg:ml-auto lg:mr-auto"
+        >
+          <img
+            src="./img/3a954409-8896-457c-a428-01a03d07396c.png"
+            alt=""
+            class="pb-2 max-h-full"
+          />
+          <div id="informacoes " class="self-center">
+            <h2 class="lg:text-[74px] text-[28px] font-bold leading-[112%]">
+              ande mais tranquilo
+            </h2>
+            <p class="lg:text-[20px] mb-2">
+              inscreva-se em dos nossos planos de calçados
+            </p>
+            <a
+              href="garantia.html"
+              class="text-[20px] bg-amber-300 hover:bg-amber-400 transition duration-300 p-2 inline-block rounded-[4px] text-black"
+              >conheça mais</a
+            >
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer id="contato" class="bg-black p-4 text-white">
+      <div
+        class="sm:flex sm:flex-wrap sm:justify-between items-start max-w-[1300px] ml-auto mr-auto gap-8"
+      >
+        <div class="text-left">
+          <h2 class="text-[2rem] font-bold">Vans Store</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div>
+            <h3 class="text-[1.3rem]">contato</h3>
+          </div>
+          <div class="flex flex-col">
+            <span>+55 (91)988787-5744</span>
+            <span>jdoasdifs@gmail.com</span>
+          </div>
+          <div class="flex flex-col">
+            <span>rua jacintopinto 45</span>
+            <span>Rio de Janeiro-RJ</span>
+          </div>
+          <div class="flex gap-2 mt-4 icone">
+            <img src="redes/instagram.svg" alt="" class="max-w-[32px]" />
+            <img src="redes/facebook.svg" alt="" class="max-w-[32px]" />
+            <img src="redes/youtube.svg" alt="" class="max-w-[32px]" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-[1.3rem]">informações</h2>
+          <a href="" class="underline">tenis</a>
+          <a href="#contato">contato</a>
+          <a href="termos.html">termos e condições</a>
+          <a href="garantia.html">planos</a>
+        </div>
+      </div>
+    </footer>
+    <script src="bicicletas.js"></script>
+  </body>
+</html>

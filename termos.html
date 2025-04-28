@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/menuestilo.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header
@@ -14,27 +17,50 @@
       <h2 class="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[4rem]">
         <a href="./index.html">Vans Store</a>
       </h2>
-      <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
-        <li><a href="sapatos.html" class="header">sapatos</a></li>
-        <li><a href="garantia.html" class="header">planos</a></li>
-        <li><a href="#contato" class="header">contato</a></li>
-      </ul>
+      <nav>
+        <ul class="flex gap-4 font-semibold text-[1.2rem] lg:text-[1.5rem]">
+          <li><a href="sapatos.html" class="">sapatos</a></li>
+          <li><a href="garantia.html" class="">planos</a></li>
+          <li><a href="#contato" class="">contato</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div class=" bg-black text-white p-4 ">
+      <div class="bg-black text-white p-4">
         <p class="sm:text-[16px]">TERMOS DE USO</p>
-        <h1 class="sm:text-[64px]">termos e condições<span class="text-amber-300">.</span></h1>
+        <h1 class="sm:text-[64px]">
+          termos e condições<span class="text-amber-300">.</span>
+        </h1>
       </div>
       <div class="max-w-[500px] flex flex-col gap-2 m-auto p-4">
         <h2 class="sm:text-[1.3rem]">1. Aceitação dos Termos:</h2>
-        <p>Ao utilizar o Vans Store, você concorda em cumprir e estar legalmente vinculado a estes Termos e Condições. Se você não concordar com algum destes termos, por favor, não utilize este site.</p>
-        <h2 class="sm:text-[1.3rem]">2. Descrição dos Serviços:
-        </h2>
-        <p>O Vans store oferece venda online de roupas. Os serviços são fornecidos "como estão" e "conforme disponíveis", e a Vans store se reserva o direito de modificar ou descontinuar qualquer serviço a qualquer momento, sem aviso prévio.</p>
+        <p>
+          Ao utilizar o Vans Store, você concorda em cumprir e estar legalmente
+          vinculado a estes Termos e Condições. Se você não concordar com algum
+          destes termos, por favor, não utilize este site.
+        </p>
+        <h2 class="sm:text-[1.3rem]">2. Descrição dos Serviços:</h2>
+        <p>
+          O Vans store oferece venda online de roupas. Os serviços são
+          fornecidos "como estão" e "conforme disponíveis", e a Vans store se
+          reserva o direito de modificar ou descontinuar qualquer serviço a
+          qualquer momento, sem aviso prévio.
+        </p>
         <h2 class="sm:text-[1.3rem]">3. Cadastro e Conta do Usuário:</h2>
-        <p>Para acessar determinados recursos do site, você pode precisar se cadastrar e criar uma conta. Você é responsável por manter a confidencialidade de suas informações de login e por todas as atividades que ocorrerem em sua conta.</p>
+        <p>
+          Para acessar determinados recursos do site, você pode precisar se
+          cadastrar e criar uma conta. Você é responsável por manter a
+          confidencialidade de suas informações de login e por todas as
+          atividades que ocorrerem em sua conta.
+        </p>
         <h2 class="sm:text-[1.3rem]">4. Uso do Conteúdo:</h2>
-        <p>Todo o conteúdo disponibilizado no Vans Store, incluindo textos, imagens, vídeos e outros materiais, é de propriedade do Vans Store ou de seus licenciadores e está protegido por leis de direitos autorais. Você concorda em não reproduzir, distribuir ou modificar qualquer conteúdo sem autorização expressa.</p>
+        <p>
+          Todo o conteúdo disponibilizado no Vans Store, incluindo textos,
+          imagens, vídeos e outros materiais, é de propriedade do Vans Store ou
+          de seus licenciadores e está protegido por leis de direitos autorais.
+          Você concorda em não reproduzir, distribuir ou modificar qualquer
+          conteúdo sem autorização expressa.
+        </p>
       </div>
     </main>
     <footer id="contato" class="bg-black p-4 text-white">
@@ -65,11 +91,12 @@
         <div class="flex flex-col gap-1">
           <h2 class="text-[1.3rem]">informações</h2>
           <a href="sapatos.html">tenis</a>
-          <a href="#contato" >contato</a>
+          <a href="#contato">contato</a>
           <a href="termos.html" class="underline">termos e condições</a>
           <a href="garantia.html">planos</a>
         </div>
       </div>
     </footer>
+    <script src="bicicletas.js"></script>
   </body>
 </html>

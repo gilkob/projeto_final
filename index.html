@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menuestilo.css" />
+
     <title>vansstore - shoe store</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body class="max-w-screen overflow-x-hidden">
     <header class="bg-black pb-12">
@@ -21,14 +25,14 @@
           <ul
             class="flex text-gray-900 gap-2 font-semibold sm:text-[1.2rem] sm:gap-4 lg:text-[1.5rem] lg:gap-8 lg:text-white"
           >
-            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black header">
+            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
               <a href="sapatos.html">sapatos</a>
             </li>
-            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black header">
+            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
               <a href="./garantia.html">planos</a>
             </li>
-            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black header">
-              <a href="">contato</a>
+            <li class="bg-amber-50 p-2 rounded-[0.5rem] lg:bg-black">
+              <a href="#contato">contato</a>
             </li>
           </ul>
         </nav>
@@ -117,7 +121,7 @@
         </li>
       </ul>
     </article>
-    <article class="bg-black shadow1 sm:mt-[80px]">
+    <article class="bg-black shadow2 sm:mt-[80px]">
       <div
         class="text-white text-center p-4 mt-4 sm:grid sm:grid-cols-2 gap-4 lg:max-w-[1300px] box-border pl-[20px] pr-[20px] lg:box-border lg:pl-[20px] lg:pr-[20px] lg:mr-auto lg:ml-auto"
       >
@@ -141,7 +145,7 @@
             comforto para os nossos clientes
           </p>
           <a
-            href=""
+            href="biunit.html"
             class="underline text-amber-300 font-semibold lg:text-[1.5rem] lg:font-bold lg:hover:text-amber-50 lg:transition-all lg:duration-300 lg:ease-in-out"
             >escolha um modelo</a
           >
@@ -208,5 +212,6 @@
         </div>
       </div>
     </footer>
+    <script src="bicicletas.js"></script>
   </body>
 </html>
